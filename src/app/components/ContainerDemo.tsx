@@ -1,16 +1,17 @@
 import Container from "@mui/material/Container";
 
 const ContainerDemo = () => {
+  // https://mui.com/material-ui/react-container/
+
   return (
     <>
-      {/* <Container
-        component="section"
-        sx={{ padding: 2, border: "1px dashed grey" }}
-      >
-        Using sx prop
+      <Container sx={{ bgcolor: "lightcoral", my: 2 }}>
+        This text is in a container
       </Container>
 
-      <Container>Not using sx prop</Container> */}
+      <Container disableGutters sx={{ bgcolor: "lightcoral", my: 2 }}>
+        This text is in a container. Gutters are disabled.
+      </Container>
     </>
   );
 };

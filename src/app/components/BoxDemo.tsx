@@ -7,7 +7,6 @@ const BoxDemo = () => {
     <>
       {/* sx prop */}
       <Box
-        component="section"
         sx={{
           padding: 2,
           border: "1px dashed grey",
@@ -20,7 +19,6 @@ const BoxDemo = () => {
 
       <Box
         my={2}
-        component="section"
         p={2}
         border="1px dashed grey"
         bgcolor="lightcoral"
@@ -37,6 +35,23 @@ const BoxDemo = () => {
 
       <Box my={2} bgcolor="lightgreen" p={2}>
         Using MUI spacing units
+      </Box>
+
+      {/* component prop */}
+      <Box component="section" my={2} bgcolor="lightblue" p={2}>
+        HTML section element
+      </Box>
+
+      <Box component="code" my={2} bgcolor="lightblue" p={2}>
+        HTML code element
+      </Box>
+
+      <Box component="form" my={2} bgcolor="lightblue" p={2}>
+        HTML form element
+      </Box>
+
+      <Box component="span" my={2} bgcolor="lightblue" p={2}>
+        HTML span element
       </Box>
     </>
   );
