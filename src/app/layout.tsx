@@ -1,12 +1,7 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+"use client";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "MUI Demonstration",
-  description: "MUI Demonstration",
-};
+import { ThemeProvider } from "@mui/material";
+import { theme } from "./theme";
 
 const RootLayout = ({
   children,
@@ -15,7 +10,9 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <ThemeProvider theme={theme}>
+        <body>{children}</body>
+      </ThemeProvider>
     </html>
   );
 };
