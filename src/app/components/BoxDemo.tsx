@@ -29,12 +29,16 @@ const BoxDemo = () => {
 
       {/* spacing */}
       {/* https://mui.com/system/spacing/ */}
+      <Box my={2} bgcolor="lightgreen" p={2}>
+        ✅ Using MUI spacing units
+      </Box>
+
       <Box my={2} bgcolor="lightgreen" p="2px">
         Using pixels
       </Box>
 
-      <Box my={2} bgcolor="lightgreen" p={2}>
-        Using MUI spacing units
+      <Box my={2} bgcolor="lightgreen" p="5%">
+        Using percentage
       </Box>
 
       {/* component prop */}

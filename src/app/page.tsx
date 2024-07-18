@@ -8,6 +8,7 @@ const Home = () => {
   return (
     <>
       <Welcome />
+
       {/* Layout components */}
       {/* <BoxDemo /> */}
       {/* <ContainerDemo /> */}
