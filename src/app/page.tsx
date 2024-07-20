@@ -3,21 +3,25 @@ import BoxDemo from "./components/BoxDemo";
 import ContainerDemo from "./components/ContainerDemo";
 import FlexboxDemo from "./components/FlexboxDemo";
 import ThemeDemo from "./components/ThemeDemo";
+import StackDemo from "./components/StackDemo";
+import GridDemo from "./components/GridDemo";
 
 const Home = () => {
   return (
     <>
       <Welcome />
 
-      {/* Layout components */}
+      {/* Layout Components */}
       {/* <BoxDemo /> */}
       {/* <ContainerDemo /> */}
-
-      {/* Flexbox */}
-      {/* <FlexboxDemo /> */}
+      {/* <StackDemo /> */}
+      {/* <GridDemo /> */}
 
       {/* Theme */}
       {/* <ThemeDemo /> */}
+
+      {/* Flexbox */}
+      {/* <FlexboxDemo /> */}
     </>
   );
 };
