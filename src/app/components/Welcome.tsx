@@ -12,7 +12,7 @@ const Welcome = () => {
     shouldForwardProp: (prop) => prop !== "clockwise",
   })<SpinningImageCustomProps>(({ clockwise }) => ({
     ...(clockwise && {
-      animation: "spin 6s linear infinite",
+      animation: "spin 10s linear infinite",
       "@keyframes spin": {
         "0%": {
           transform: "rotate(0deg)",
@@ -24,7 +24,7 @@ const Welcome = () => {
     }),
 
     ...(!clockwise && {
-      animation: "spin 6s linear infinite",
+      animation: "spin 10s linear infinite",
       "@keyframes spin": {
         "0%": {
           transform: "rotate(0deg)",
